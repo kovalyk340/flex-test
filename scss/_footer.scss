@@ -1,0 +1,114 @@
+.footer {
+    padding: 85px 0 69px;
+    background-color: #6c3838;
+    &__row {
+        display: flex;
+        margin: 0 -75px;
+    }
+
+    &__column {
+        padding: 0 75px;
+        box-sizing: content-box;
+        &_col-1 {
+            flex: 0 1 296px;
+        }
+
+        &_col-2 {
+            flex: 0 1 190px;
+        }
+
+        &_col-3 {
+            flex: 0 1 186px;
+        }
+
+        &_col-4 {
+            flex: 0 1 300px;
+        }
+    }
+
+    &__flexbox {
+    }
+
+    &__company {
+    }
+
+    &__services {
+    }
+
+    &__contact {
+    }
+}
+
+.flexbox {
+    &__logo {
+        margin-bottom: 19px;
+        max-width: 100%;
+    }
+
+    &__ref {
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 160%;
+        color: #ffffff;
+        margin-bottom: 21px;
+    }
+}
+.company {
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
+.title {
+}
+.item {
+}
+.link {
+}
+.services {
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
+.contact {
+    &__title {
+        margin-bottom: 33px;
+    }
+
+    &__list {
+        font-size: 16px;
+        line-height: 150%;
+
+        color: #fff;
+    }
+
+    &__item {
+        color: #fff;
+        margin-bottom: 11px;
+    }
+    &__link {
+        color: #fff;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: #ffc000;
+        }
+    }
+}

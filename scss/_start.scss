@@ -1,0 +1,166 @@
+.start {
+  &__heading {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 150%;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #ffffff;
+
+    margin-bottom: 11px;
+  }
+
+  &__subheading {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #ffffff;
+    margin-bottom: 50px;
+  }
+
+  &__row {
+    display: flex;
+    margin: 0 -37px;
+  }
+
+  &__column {
+    flex: 0 1 25%;
+    padding: 0 37px;
+  }
+
+  &__item {
+    padding: 30px 40px;
+    background: #cff2a2;
+    border-radius: 4px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      background: #ffffff;
+      box-shadow: 0px 0px 15px 1px #ffffff;
+    }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    text-align: center;
+    margin-bottom: 22px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #a10b0c;
+
+    margin-bottom: 11px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  &__wrap-more {
+    text-align: center;
+  }
+
+  &__more {
+    position: relative;
+    display: inline-block;
+
+    color: #a10b0c;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+
+    padding-right: 12px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: #000000;
+      &::after {
+        border-left-color: #000000;
+      }
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 6px;
+      right: 0px;
+
+      border-left: 7px solid #a10b0c;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+@media (max-width: 1325px) {
+  .start {
+    &__row {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: -30px -37px;
+    }
+
+    &__column {
+      flex: 0 1 40%;
+      padding: 37px;
+
+      // 20% - 5 карточек
+      // 21% - 25% - 4 карточки
+      // 26% - 33.3334% - 3 карточки
+      // 34% - 50% - 2 карточки
+      // 51% - 100%;
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .start {
+    &__column {
+      flex: 0 1 50%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .start {
+    &__row {
+      margin: -10px;
+    }
+
+    &__column {
+      flex: 0 1 60%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .start {
+    &__row {
+      margin: -10px;
+    }
+
+    &__column {
+      flex: 0 1 100%;
+    }
+  }
+}

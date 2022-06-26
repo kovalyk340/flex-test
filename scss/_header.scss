@@ -1,0 +1,44 @@
+.header {
+    background: #cff2a2;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+
+    &__logo {
+        img {
+            width: 92px;
+            height: 30px;
+        }
+    }
+
+    &__nav {
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__point {
+        margin-right: 34px;
+    }
+
+    &__ref {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 157%;
+
+        color: #000000;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: #0a36a7;
+        }
+    }
+}
+.container {
+}
